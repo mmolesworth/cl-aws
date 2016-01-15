@@ -7,9 +7,6 @@
 # in the Authorization header.
 
 
-import sys, os, base64, datetime, hashlib, hmac 
-import requests # pip install requests
-
 * Packages
 #+BEGIN_SRC lisp
 (use-package 'common-lisp 'local-time 'drakma)
@@ -19,12 +16,6 @@ import requests # pip install requests
 
 
 # ************* REQUEST VALUES *************
-method = 'GET'
-service = 'ec2'
-host = 'ec2.amazonaws.com'
-region = 'us-east-1'
-endpoint = 'https://ec2.amazonaws.com'
-request_parameters = 'Action=DescribeRegions&Version=2013-10-15'
 
 #+BEGIN_SRC lisp
 (setf method "GET")
